@@ -45,6 +45,7 @@ header {
     text-align: center;
     height: 85vh;
     position: relative;
+    overflow: hidden;
 }
 
 header::before {
@@ -67,7 +68,7 @@ header::before {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    /* border-bottom: 2px solid #00000080; */
+    border-bottom: 2px solid #0000001a;
     background: inherit;
 }
 
@@ -87,14 +88,15 @@ header::before {
 
 .navigation li{
     font-size: 1.2rem;
-    padding: 1.6rem 0;
+    padding: 1.6rem 0.2rem;
     width: 70px;
     text-align: center;
     font-family: var(--Abel);
 }
 
 .navigation li:hover {
-    background: #949494;
+    background: #000000a4;
+    font-size: 1.25rem;
 }
 
 .navigation li a{
@@ -109,6 +111,7 @@ header::before {
 
 .topbar .media i:hover{
     color: #949494;
+    font-size: 1.3rem;
 }
 
 /* -------------------- HamBurger Menu -------------------------- */
@@ -169,9 +172,13 @@ header::before {
 
 /* ------------------------- Header Body ------------------------- */
 header .header-body {
-    position: relative;
+    min-height: 80vh;
+    padding-top: 5rem;
     font-family: var(--Abel);
-    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header .header-body h1 {
@@ -215,7 +222,7 @@ header .header-body a:hover{
     }
 
     .topbar .navigation, .media {
-        visibility: hidden;
+        display: none;
         position: absolute;
     }
 
