@@ -81,6 +81,10 @@ header::before {
     font-size: 5rem;
 }
 
+.navigation {
+    display: initial;
+}
+
 .navigation .nav-list{
     display: flex;
     overflow: hidden;
@@ -88,8 +92,8 @@ header::before {
 
 .navigation li{
     font-size: 1.2rem;
-    padding: 1.6rem 0.2rem;
-    width: 70px;
+    padding: 1.6rem 0.3rem;
+    min-width: 70px;
     text-align: center;
     font-family: var(--Abel);
 }
@@ -216,14 +220,33 @@ header .header-body a:hover{
     }
 }
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 830px){
     header .header-body h1{
         font-size: 1.7rem;
     }
 
     .topbar .navigation, .media {
         display: none;
+    }
+
+    /* .header-body h1 {
+        display: none;
+    } */
+
+    .collapse{
+        display: none;
+    }
+
+    .nav-list {
+        flex-direction: column;
         position: absolute;
+        top: 7.9vh;
+        left: 0;
+        width: 100vw;
+    }
+
+    .navigation li {
+        border-bottom: 1px solid #000000d4;
     }
 
     .topbar .hamburger{
@@ -236,6 +259,10 @@ header .header-body a:hover{
 @media only screen and (max-width: 680px){
     .topbar{
         padding: 0 1.5rem;
+    }
+
+    .nav-list {
+        top: 7.2vh;
     }
 
     .title {
@@ -258,6 +285,10 @@ header .header-body a:hover{
 @media only screen and (max-width: 425px){
     .topbar {
         padding: 0 1rem;
+    }
+
+    .nav-list {
+        top: 6.5vh;
     }
 
     .title {
