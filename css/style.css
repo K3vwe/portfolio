@@ -268,6 +268,7 @@ section .owl-nav{
 
 #skills .skill-container {
     padding-top: 3.5rem;
+    border: 1px solid red;
 }
 
 #skills .skill-container .icon {
@@ -328,7 +329,25 @@ section .owl-nav{
     .topbar .hamburger{
         visibility: visible;
         transition: visibility 0.5s ease-in;
-        
+    }
+
+    #skills .skill-container {
+        padding-top: 3rem;
+    }
+
+    #skills .skill-container .icon {
+        padding: 1rem;
+        width: 155px;
+        text-align: center;
+    }
+    
+    #skills .skill-container .icon img {
+        width: 96px;
+        height: 96px;
+    }
+
+    #skills > h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -355,6 +374,10 @@ section .owl-nav{
 
     header .header-body h1{
         font-size: 1.5rem;
+    }
+    
+    #skills .skill-container {
+        padding-top: 2.5rem;
     }
 }
 
