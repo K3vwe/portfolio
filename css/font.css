@@ -9,3 +9,9 @@
     font-family: Billy;
     src: url("../fonts/billy-argel-font/billy_argel_font_regular/Billy\ Argel\ Font___.ttf");
 }
+
+/* Livvic */
+@font-face {
+    font-family: Livvic;
+    src: url("../fonts/Livvic/Livvic-Regular.ttf");
+}
